@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Générateur d'inventaire</title>
+</head>
+<body>
+  <h1>Générateur d'inventaire Excel</h1>
+
+  <!-- Choix du mode -->
+  <label for="mode-select">Type de liste :</label>
+  <select id="mode-select">
+    <option value="trimestre">Répertoire trimestriel</option>
+    <option value="global">Liste globale</option>
+  </select>
+  <br><br>
+
+  <!-- Choix fichier -->
+  <input type="file" id="upload" accept=".xlsx,.xls" />
+  <br><br>
+
+  <!-- Boutons -->
+  <button id="generate">Générer</button>
+  <button id="download" disabled>Télécharger Excel</button>
+  <button id="print" disabled>Imprimer</button>
+
+  <p id="status"></p>
+
+  <script src="xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
